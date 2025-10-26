@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Roberto Barbearia</title>
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #eee;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      scroll-behavior: smooth;
+    }
+    .nav-link {
+      color: #eee;
+      margin-right: 40px;
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #f1683a;
+      transform: scale(1.1);
+      text-shadow: 0 0 5px rgba(241, 104, 58, 0.5);
+    }
+    .nav-link:active {
+      transform: scale(0.95);
+    }
+    .contact-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(241, 104, 58, 0.3);
+    }
+    .form-input {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: #f1683a;
+    }
+  </style>
+</head>
+<body>
+  <header class="w-5/6 max-w-[1140px] h-[50px] mx-auto flex items-center justify-between relative z-[100]">
+    <button id="menu-toggle" class="md:hidden focus:outline-none focus:ring-2 focus:ring-[#f1683a] p-2">
+      <i data-feather="menu" id="menu-icon" class="w-6 h-6 text-gray-200 hover:text-[#f1683a] transition-colors"></i>
+    </button>
+    
+    <nav id="nav-menu" class="hidden md:flex gap-8 w-full md:w-auto">
+      <div class="flex flex-col md:flex-row md:items-center gap-8 absolute md:static top-[50px] left-0 w-full bg-[#000] md:bg-transparent py-4 md:py-0 px-4">
+        <a href="index.html" class="nav-link flex items-center gap-2 font-medium" onclick="closeMenu()"><i data-feather="home"></i> Home</a>
+        <a href="services.html" class="nav-link flex items-center gap-2 font-medium" onclick="closeMenu()"><i data-feather="scissors"></i> Serviços</a>
+        <a href="info.html" class="nav-link flex items-center gap-2 font-medium" onclick="closeMenu()"><i data-feather="info"></i> Informações</a>
+        <a href="contato.html" class="nav-link flex items-center gap-2 font-medium" onclick="closeMenu()"><i data-feather="mail"></i> Contato</a>
+      </div>
+    </nav>
+  </header>
+
+    <main class="container mx-auto py-12 px-4">
+        <h1 class="text-4xl font-bold text-[#f1683a] mb-12 text-center">Entre em Contato</h1>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="contact-card p-6">
+                <div class="rounded-lg overflow-hidden mb-4 transition-transform hover:scale-105">
+                    <img src="images/contact.jpg" alt="Atendimento na barbearia" class="w-full h-40 object-cover">
+                </div>
+                <h2 class="text-2xl font-bold mb-4 text-[#f1683a]">Informações de Contato</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <i data-feather="phone" class="text-[#f1683a]"></i>
+                        <span>(11) 97739-0464</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-feather="mail" class="text-[#f1683a]"></i>
+                        <span>aparecidor@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-feather="map-pin" class="text-[#f1683a]"></i>
+                        <span>Rua Daniel dos Santos, viela oito ,47 - Suzano/SP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card p-6">
+                <h2 class="text-2xl font-bold mb-4 text-[#f1683a]">Envie uma Mensagem</h2>
+                <form>
+                    <input type="text" placeholder="Seu Nome" class="form-input">
+                    <input type="email" placeholder="Seu E-mail" class="form-input">
+                    <input type="tel" placeholder="Seu Telefone" class="form-input">
+                    <textarea placeholder="Sua Mensagem" class="form-input" rows="5"></textarea>
+                    <button type="submit" class="bg-[#f1683a] text-white py-2 px-6 rounded hover:bg-[#e05e33] transition" title="Enviar mensagem">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="contact-card p-6">
+            <h2 class="text-2xl font-bold mb-4 text-[#f1683a] text-center">Localização</h2>
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d36322.45006850908!2d-46.3151836!3d-23.4992228!3m2!1i1024!2i768!4f13.1!2m1!1sroberto%20barbearia!5e1!3m2!1spt-BR!2sbr!4v1757530707150!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <div class="flex justify-center mt-12 mb-8">
+        <a href="index.html#main-section" class="bg-[#f1683a] hover:bg-[#e05e33] text-white font-medium py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 inline-flex items-center gap-2">
+            <i data-feather="arrow-up"></i> Voltar ao Início
+        </a>
+    </div>
+
+   <script>
+  feather.replace();
+
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('nav-menu');
+    const icon = document.getElementById('menu-icon');
+
+    menu.classList.toggle('hidden');
+
+    if (menu.classList.contains('hidden')) {
+      // volta para ícone de menu
+      icon.setAttribute("data-feather", "menu");
+    } else {
+      // troca para ícone de X
+      icon.setAttribute("data-feather", "x");
+    }
+
+    // re-renderiza os ícones feather depois da troca
+    feather.replace();
+  });
+
+  function closeMenu() {
+    if (window.innerWidth < 768) {
+      document.getElementById("nav-menu").classList.add("hidden");
+      const icon = document.getElementById("menu-icon");
+      icon.setAttribute("data-feather", "menu");
+      feather.replace();
+    }
+  }
+</script>
+</body>
+</html>
