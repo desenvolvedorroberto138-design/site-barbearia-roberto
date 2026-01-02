@@ -1,0 +1,245 @@
+/* CSS Global para Tema Fresha Inspired */
+
+/* Variáveis de Cor */
+:root {
+  --primary-color: #6C5CE7;
+  --primary-hover: #5A4FE0;
+  --highlight-color: #7CCBFF;
+  --background-main: #0B0D17;
+  --background-secondary: #12142A;
+  --background-cards: #181A33;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B8BBE0;
+  --text-muted: #8A8DB5;
+  --border-color: #2A2D55;
+}
+
+/* Estilos Gerais */
+body {
+  margin: 0;
+  background-color: var(--background-main);
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Adicionado: CSS para esconder o texto de SEO para usuários normais */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Navegação */
+.nav-link {
+  color: var(--text-primary);
+  margin-right: 40px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
+  text-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+}
+
+.nav-link:active {
+  transform: scale(0.95);
+}
+
+/* Botões */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  border: none;
+  padding: 10px 30px;
+  font-size: 1em;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(108, 92, 231, 0.1);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(108, 92, 231, 0.2);
+}
+
+/* Cards */
+.service-card, .contact-card, .info-card {
+  background-color: var(--background-cards);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover, .contact-card:hover, .info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(108, 92, 231, 0.2);
+}
+
+/* Animações */
+.zoom-in-title {
+  transform: scale(0);
+  animation: zoomIn 1.5s ease forwards;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Modal */
+#modal-setmore {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(11, 13, 23, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+#modal-setmore.active {
+  display: flex;
+}
+
+#modal-setmore-content {
+  background-color: var(--background-cards);
+  width: 90%;
+  max-width: 900px;
+  height: 80vh;
+  border-radius: 12px;
+  overflow: hidden;
+  transform: scale(0.95);
+  opacity: 0;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(108, 92, 231, 0.2);
+}
+
+#modal-setmore.active #modal-setmore-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--highlight-color);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+#modal-close:hover {
+  color: var(--text-primary);
+  transform: scale(1.2);
+}
+
+/* Animação do botão "Agendar Aqui" */
+@keyframes pulse-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(108, 92, 231, 0.7);
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 0 0 10px rgba(108, 92, 231, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(108, 92, 231, 0);
+  }
+}
+
+/* Botão agendar sempre centralizado vertical */
+#open-setmore {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  animation: pulse-animation 2s infinite;
+}
+
+/* Botão Voltar ao Topo */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+/* Formulários */
+.form-input {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-secondary);
+}
+
+/* Textos secundários */
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* Textos mutados */
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* Bordas */
+.border-muted {
+  border-color: var(--border-color);
+}
