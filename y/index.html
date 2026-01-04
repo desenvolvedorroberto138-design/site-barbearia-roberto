@@ -1,150 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="scroll-smooth">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roberto Barbearia</title>
-  <link rel="icon" href="assets/images/icon/favicon-barber/favicon.ico" type="image/x-icon">
-
-   <!-- Favicons (substituir pelos seus arquivos) -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon/favicon-barber/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icon/favicon-barber/android-chrome-192x192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon-barber/apple-touch-icon.png">
-
-  <link rel="manifest" href="assets/images/icon/favicon-barber/site.webmanifest">
-<link rel="mask-icon" href="assets/images/icon/favicon-barber/safari-pinned-tab.svg" color="#000000">
-<meta name="msapplication-TileColor" content="#000000">
-
+  <link rel="icon" href="assets/images/icon/favicon-barber/favicon.ico" type="image/x-icon" />
+  <!-- Favicons (substituir pelos seus arquivos) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon/favicon-barber/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/icon/favicon-barber/android-chrome-192x192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon-barber/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/images/icon/favicon-barber/site.webmanifest" />
+  <link rel="mask-icon" href="assets/images/icon/favicon-barber/safari-pinned-tab.svg" color="#000000" />
+  <meta name="msapplication-TileColor" content="#000000" />
   <!-- Cor da barra do navegador -->
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#000000" />
   <!-- Fundo da splash screen iOS -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <!-- Meta SEO -->
-  <meta name="description"
-    content="Barbearia profissional especializada em cortes de cabelo e barba. Ambiente acolhedor e atendimento de qualidade.">
-  <meta name="keywords" content="barbearia, barbearia em suzano, corte de cabelo, barba, barbeiro, estilo masculino">
-  <meta name="author" content="Roberto Barbearia">
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Barbearia profissional especializada em cortes de cabelo e barba. Ambiente acolhedor e atendimento de qualidade." />
+  <meta name="keywords" content="barbearia, barbearia em suzano, corte de cabelo, barba, barbeiro, estilo masculino" />
+  <meta name="author" content="Roberto Barbearia" />
+  <meta name="robots" content="index, follow" />
   <meta name="google-site-verification" content="_14VslScX65zkvjNDy_FavWg5D_eIalmlCOXizIv424" />
-
-
   <!-- Open Graph -->
-  <meta property="og:title" content="Roberto Barbearia">
-  <meta property="og:description"
-    content="Roberto Barbeiro em Suzano, Miguel Badra e regiões — cortes de cabelo e barba profissional">
-  <meta property="og:image" content="https://robertobarbearia.com.br/assets/images/icon/banner_roberto.png">
-  <meta property="og:type" content="article">
-   <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-     <link rel="canonical" href="https://robertobarbearia.com.br/">
-
+  <meta property="og:title" content="Roberto Barbearia" />
+  <meta property="og:description" content="Roberto Barbeiro em Suzano, Miguel Badra e regiões — cortes de cabelo e barba profissional" />
+  <meta property="og:image" content="https://robertobarbearia.com.br/assets/images/icon/banner_roberto.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <link rel="canonical" href="https://robertobarbearia.com.br/" />
   <!-- Tailwind e Feather Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome para ícones melhores -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Animate On Scroll -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
   <!-- CSS Global -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
   <!-- HEADER -->
   <header class="w-5/6 max-w-[1140px] h-[50px] mx-auto flex items-center justify-between relative z-[100]">
-    <button id="menu-toggle" class="md:hidden focus:outline-none flex items-center justify-center mt-16"
-      aria-label="Abrir menu" aria-expanded="false">
+    <button id="menu-toggle" class="md:hidden focus:outline-none flex items-center justify-center mt-16" aria-label="Abrir menu" aria-expanded="false">
       <i id="menu-icon" class="fa-solid fa-bars text-[#FFFFFF] hover:text-[#6C5CE7] transition-colors"></i>
     </button>
-
     <nav id="nav-menu" class="hidden md:flex gap-8 w-full md:w-auto">
-      <div
-        class="flex flex-col md:flex-row md:items-center gap-8 absolute md:static top-[50px] left-0 w-full bg-[#000] md:bg-transparent py-4 md:py-0 px-4">
-        <a href="index.html" class="nav-link flex items-center gap-2 font-medium"><i
-            class="fa-solid fa-house"></i> Home</a>
-        <a href="services.html" class="nav-link flex items-center gap-2 font-medium"><i
-            class="fa-solid fa-scissors"></i> Serviços</a>
-        <a href="info.html" class="nav-link flex items-center gap-2 font-medium"><i
-            class="fa-solid fa-circle-info"></i> Informações</a>
-        <a href="contato.html" class="nav-link flex items-center gap-2 font-medium"><i
-            class="fa-solid fa-envelope"></i> Contato</a>
+      <div class="flex flex-col md:flex-row md:items-center gap-8 absolute md:static top-[50px] left-0 w-full bg-[#000] md:bg-transparent py-4 md:py-0 px-4">
+        <a href="index.html" class="nav-link flex items-center gap-2 font-medium"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="services.html" class="nav-link flex items-center gap-2 font-medium"><i class="fa-solid fa-scissors"></i> Serviços</a>
+        <a href="info.html" class="nav-link flex items-center gap-2 font-medium"><i class="fa-solid fa-circle-info"></i> Informações</a>
+        <a href="contato.html" class="nav-link flex items-center gap-2 font-medium"><i class="fa-solid fa-envelope"></i> Contato</a>
       </div>
     </nav>
   </header>
-<main id="main-section" class="container mx-auto py-12 px-4">
-  <section class="flex flex-col items-center mb-16 gap-8" data-aos="fade-in">
-    
-    <div class="relative md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-lg overflow-hidden shadow-xl">
-      
-      <img src="assets/images/banner_capa.png" alt="imagem do profissional Roberto na barbearia com um corte moderno e barba bem aparada
-      "
-        class="w-full h-auto object-cover opacity-90">
-
-      <div class="absolute inset-0 flex flex-col items-center justify-end p-4 text-center">
-        
-        <button id="open-setmore"
-          class="bg-[#6C5CE7] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-[#5A4FE0] focus:outline-none focus:ring-4 focus:ring-[#6C5CE7] focus:ring-opacity-50 transition-all duration-300 transform hover:-translate-y-1 mb-6">
-          Agendar Aqui
-        </button>
-
-        <div class="max-w-md bg-black bg-opacity-60 backdrop-blur-sm p-4 rounded-lg">
-          <h1 class="text-3xl sm:text-4xl font-bold text-[#6C5CE7] mb-2 zoom-in-title leading-tight">Roberto Barbearia</h1>
-          <!-- Parágrafo para o efeito de digitação, ele deve começar vazio -->
-          <p id="typing-paragraph" class="text-sm sm:text-base text-gray-200 leading-relaxed"></p>
-          <!-- Parágrafo oculto para SEO -->
-          <p class="sr-only">Roberto Barbearia em Suzano, Miguel Badra e regiões — especialista em cortes de cabelo e barba profissional.</p>
+  <main id="main-section" class="container mx-auto py-12 px-4">
+    <section class="flex flex-col items-center mb-16 gap-8" data-aos="fade-in">
+      <div class="relative md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-lg overflow-hidden shadow-xl">
+        <img src="assets/images/banner_capa.png" alt="imagem do profissional Roberto na barbearia com um corte moderno e barba bem aparada " class="w-full h-auto object-cover opacity-90" />
+        <div class="absolute inset-0 flex flex-col items-center justify-end p-4 text-center">
+          <button id="open-setmore" class="bg-[#6C5CE7] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-[#5A4FE0] focus:outline-none focus:ring-4 focus:ring-[#6C5CE7] focus:ring-opacity-50 transition-all duration-300 transform hover:-translate-y-1 mb-6">
+            Agendar Aqui
+          </button>
+          <div class="max-w-md bg-black bg-opacity-60 backdrop-blur-sm p-4 rounded-lg">
+            <h1 class="text-3xl sm:text-4xl font-bold text-[#6C5CE7] mb-2 zoom-in-title leading-tight">Roberto Barbearia</h1>
+            <!-- Parágrafo para o efeito de digitação, ele deve começar vazio -->
+            <p id="typing-paragraph" class="text-sm sm:text-base text-gray-200 leading-relaxed"></p>
+            <!-- Parágrafo oculto para SEO -->
+            <p class="sr-only">Roberto Barbearia em Suzano, Miguel Badra e regiões — especialista em cortes de cabelo e barba profissional.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="grid md:grid-cols-2 gap-8 mb-16" data-aos="fade-up">
-    <div
-      class="relative overflow-hidden rounded-xl h-[400px] transition-all hover:transform hover:translate-y-[-5px] hover:shadow-[0 5px 15px rgba(241,104,58,0.3)]">
-      <div class="slideshow-container absolute inset-0" id="slideshow-one">
+    </section>
+    <section class="grid md:grid-cols-2 gap-8 mb-16" data-aos="fade-up">
+      <div class="relative overflow-hidden rounded-xl h-[400px] transition-all hover:transform hover:translate-y-[-5px] hover:shadow-[0 5px 15px rgba(241,104,58,0.3)]">
+        <div class="slideshow-container absolute inset-0" id="slideshow-one"></div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl h-[400px] transition-all hover:transform hover:translate-y-[-5px] hover:shadow-[0 5px 15px rgba(241,104,58,0.3)]">
+        <div class="slideshow-container absolute inset-0" id="slideshow-two"></div>
+      </div>
+    </section>
+    <section class="py-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6C5CE7]">O que dizem os clientes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-[#1a1a1a] p-8 rounded-lg shadow-lg flex items-start gap-4">
+          <img src="https://placehold.co/64x64/000000/F1683A?text=User" alt="Foto de Pedro A." class="w-16 h-16 rounded-full object-cover" />
+          <div>
+            <p class="text-gray-300 italic">"Atendimento impecável! O corte de cabelo ficou perfeito. O Roberto é um verdadeiro artista."</p>
+            <p class="mt-4 text-sm font-semibold text-[#6C5CE7]">- Pedro A.</p>
+          </div>
         </div>
-    </div>
-
-    <div
-      class="relative overflow-hidden rounded-xl h-[400px] transition-all hover:transform hover:translate-y-[-5px] hover:shadow-[0 5px 15px rgba(241,104,58,0.3)]">
-      <div class="slideshow-container absolute inset-0" id="slideshow-two">
-        </div>
-    </div>
-  </section>
-
-  <section class="py-12" data-aos="fade-up">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#6C5CE7]">O que dizem os clientes</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-      <div class="bg-[#1a1a1a] p-8 rounded-lg shadow-lg flex items-start gap-4">
-        <img src="https://placehold.co/64x64/000000/F1683A?text=User" alt="Foto de Pedro A."
-          class="w-16 h-16 rounded-full object-cover">
-        <div>
-          <p class="text-gray-300 italic">"Atendimento impecável! O corte de cabelo ficou perfeito. O Roberto é um
-            verdadeiro artista."</p>
-          <p class="mt-4 text-sm font-semibold text-[#6C5CE7]">- Pedro A.</p>
+        <div class="bg-[#1a1a1a] p-8 rounded-lg shadow-lg flex items-start gap-4">
+          <img src="https://placehold.co/64x64/000000/F1683A?text=User" alt="Foto de João P." class="w-16 h-16 rounded-full object-cover" />
+          <div>
+            <p class="text-gray-300 italic">"Ambiente muito agradável e serviço de alta qualidade. Recomendo a todos que buscam o melhor para a barba e o cabelo."</p>
+            <p class="mt-4 text-sm font-semibold text-[#6C5CE7]">- João P.</p>
+          </div>
         </div>
       </div>
-      <div class="bg-[#1a1a1a] p-8 rounded-lg shadow-lg flex items-start gap-4">
-        <img src="https://placehold.co/64x64/000000/F1683A?text=User" alt="Foto de João P."
-          class="w-16 h-16 rounded-full object-cover">
-        <div>
-          <p class="text-gray-300 italic">"Ambiente muito agradável e serviço de alta qualidade. Recomendo a todos que
-            buscam o melhor para a barba e o cabelo."</p>
-          <p class="mt-4 text-sm font-semibold text-[#6C5CE7]">- João P.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
+    </section>
+  </main>
   <!-- MODAL SETMORE -->
   <div id="modal-setmore">
     <div id="modal-setmore-content">
@@ -156,91 +114,84 @@
       <iframe id="setmore-iframe" title="Agendamento de Horário" class="w-full h-full border-0 hidden"></iframe>
     </div>
   </div>
-
   <!-- VOLTAR AO TOPO -->
-  <a href="#main-section" id="back-to-top-btn" aria-label="Voltar ao topo"
-    class="back-to-top bg-gray-800 bg-opacity-75 hover:bg-[#6C5CE7] text-white p-3 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-110">
+  <a href="#main-section" id="back-to-top-btn" aria-label="Voltar ao topo" class="back-to-top bg-gray-800 bg-opacity-75 hover:bg-[#6C5CE7] text-white p-3 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-110">
     <i class="fa-solid fa-arrow-up"></i>
   </a>
-
   <!-- FOOTER -->
   <footer class="bg-gray-900 py-12">
     <div class="container mx-auto px-4 flex flex-col items-center">
       <!-- Social Icons -->
-     <div class="flex gap-6 mb-8">
-  <a href="https://www.instagram.com/robertod_corte/" aria-label="Instagram de Roberto Barbearia" target="_blank" rel="noopener noreferrer"
-    class="text-gray-400 hover:text-[#6C5CE7] transition-colors">
-    <i class="fa-brands fa-instagram text-3xl"></i>
-  </a>
-  <a href="https://www.facebook.com/share/1CG7bM6Hr3/" aria-label="Facebook de Roberto Barbearia" target="_blank" rel="noopener noreferrer"
-    class="text-gray-400 hover:text-[#6C5CE7] transition-colors">
-    <i class="fa-brands fa-facebook text-3xl"></i>
-  </a>
-  <a href="https://wa.me/5511977390464" aria-label="WhatsApp de Roberto Barbearia" target="_blank" rel="noopener noreferrer"
-    class="text-gray-400 hover:text-[#6C5CE7] transition-colors">
-    <i class="fa-brands fa-whatsapp text-3xl"></i>
-  </a>
-</div>
-
+      <div class="flex gap-6 mb-8">
+        <a href="https://www.instagram.com/robertod_corte/" aria-label="Instagram de Roberto Barbearia" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#6C5CE7] transition-colors">
+          <i class="fa-brands fa-instagram text-3xl"></i>
+        </a>
+        <a href="https://www.facebook.com/share/1CG7bM6Hr3/" aria-label="Facebook de Roberto Barbearia" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#6C5CE7] transition-colors">
+          <i class="fa-brands fa-facebook text-3xl"></i>
+        </a>
+        <a href="https://wa.me/5511977390464" aria-label="WhatsApp de Roberto Barbearia" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-[#6C5CE7] transition-colors">
+          <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </a>
+      </div>
       <!-- Copyright -->
       <p class="text-gray-500 text-sm">&copy; <span id="current-year"></span> Roberto Barbearia. Todos os direitos reservados.</p>
     </div>
   </footer>
-
   <!-- SCRIPTS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener("DOMContentLoaded", function () {
       // Inicia o AOS
       AOS.init();
 
       // Referências de elementos
-      const menuToggle = document.getElementById('menu-toggle');
-      const navMenu = document.getElementById('nav-menu');
-      const menuIcon = document.getElementById('menu-icon');
-      const typingParagraph = document.getElementById('typing-paragraph');
-      const openModalBtn = document.getElementById('open-setmore');
-      const modal = document.getElementById('modal-setmore');
-      const modalCloseBtn = document.getElementById('modal-close');
-      const iframe = document.getElementById('setmore-iframe');
-      const loadingMessage = document.getElementById('loading-message');
-      const backToTopBtn = document.getElementById('back-to-top-btn');
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      const typingParagraph = document.getElementById("typing-paragraph");
+      const openModalBtn = document.getElementById("open-setmore");
+      const modal = document.getElementById("modal-setmore");
+      const modalCloseBtn = document.getElementById("modal-close");
+      const iframe = document.getElementById("setmore-iframe");
+      const loadingMessage = document.getElementById("loading-message");
+      const backToTopBtn = document.getElementById("back-to-top-btn");
 
       // Arrays de imagens para os slideshows
       const slideshowOneImages = [
-        'assets/images/photo_loja_one.jpg',
-        'assets/images/photo_loja_two.jpg',
-        'assets/images/photo_loja_trwee.jpg'
+        "assets/images/photo_loja_one.jpg",
+        "assets/images/photo_loja_two.jpg",
+        "assets/images/photo_loja_trwee.jpg",
       ];
       const slideshowTwoImages = [
-        'assets/images/photo_loja_4.png',
-        'assets/images/photo_loja_5.png',
-        'assets/images/photo_loja_6.png'
+        "assets/images/photo_loja_4.png",
+        "assets/images/photo_loja_5.png",
+        "assets/images/photo_loja_6.png",
       ];
 
       // Lógica do menu mobile
-      menuToggle.addEventListener('click', () => {
-        const isExpanded = navMenu.classList.contains('hidden');
-        navMenu.classList.toggle('hidden');
-        menuIcon.classList.toggle('fa-bars', !isExpanded);
-        menuIcon.classList.toggle('fa-xmark', isExpanded);
-        menuToggle.setAttribute('aria-expanded', isExpanded);
+      menuToggle.addEventListener("click", () => {
+        const isExpanded = navMenu.classList.contains("hidden");
+        navMenu.classList.toggle("hidden");
+        menuIcon.classList.toggle("fa-bars", !isExpanded);
+        menuIcon.classList.toggle("fa-xmark", isExpanded);
+        menuToggle.setAttribute("aria-expanded", isExpanded);
       });
 
       // Fecha o menu mobile quando um link é clicado
-      document.querySelectorAll('#nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
+      document.querySelectorAll("#nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
           if (window.innerWidth < 768) {
-            navMenu.classList.add('hidden');
-            menuIcon.classList.add('fa-bars');
-            menuIcon.classList.remove('fa-xmark');
-            menuToggle.setAttribute('aria-expanded', 'false');
+            navMenu.classList.add("hidden");
+            menuIcon.classList.add("fa-bars");
+            menuIcon.classList.remove("fa-xmark");
+            menuToggle.setAttribute("aria-expanded", "false");
           }
         });
       });
 
       // Efeito de digitação
-      const typingText = "Roberto Barbearia — A barbearia tradicional de Miguel Badra. Corte e barba com técnica e atenção exclusiva.";
+      const typingText =
+        "Roberto Barbearia — A barbearia tradicional de Miguel Badra. Corte e barba com técnica e atenção exclusiva.";
       let i = 0;
       function typeWriter() {
         if (i < typingText.length) {
@@ -254,51 +205,48 @@
       // Slideshow automático dinâmico
       function startSlideshow(containerId, images) {
         const slideshow = document.getElementById(containerId);
-        const slides = images.map(image => {
-          const slideDiv = document.createElement('div');
-          slideDiv.classList.add('slide');
+        const slides = images.map((image) => {
+          const slideDiv = document.createElement("div");
+          slideDiv.classList.add("slide");
           slideDiv.style.backgroundImage = `url('${image}')`;
           return slideDiv;
         });
-
         if (slides.length > 0) {
-          slides[0].classList.add('active');
-          slides.forEach(slide => slideshow.appendChild(slide));
+          slides[0].classList.add("active");
+          slides.forEach((slide) => slideshow.appendChild(slide));
         }
-
         let currentSlide = 0;
         setInterval(() => {
           if (slides.length > 0) {
-            slides[currentSlide].classList.remove('active');
+            slides[currentSlide].classList.remove("active");
             currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
+            slides[currentSlide].classList.add("active");
           }
         }, 5000); // Adicionado o intervalo de 5 segundos aqui
       }
-
-      startSlideshow('slideshow-one', slideshowOneImages);
-      startSlideshow('slideshow-two', slideshowTwoImages);
+      startSlideshow("slideshow-one", slideshowOneImages);
+      startSlideshow("slideshow-two", slideshowTwoImages);
 
       // Botão "Agendar Aqui" agora abre Fresha em nova aba
-openModalBtn.addEventListener('click', () => {
-    window.open("https://www.fresha.com/book-now/roberto-barbearia-qcnkx5p2/all-offer?share=true&pId=2736203", "_blank");
-});
-
+      openModalBtn.addEventListener("click", () => {
+        window.open(
+          "https://www.fresha.com/book-now/roberto-barbearia-qcnkx5p2/all-offer?share=true&pId=2736203",
+          "_blank"
+        );
+      });
 
       // Lógica do botão Voltar ao Topo
-      window.addEventListener('scroll', () => {
+      window.addEventListener("scroll", () => {
         if (window.scrollY > 300) {
-          backToTopBtn.style.display = 'inline-flex';
+          backToTopBtn.style.display = "inline-flex";
         } else {
-          backToTopBtn.style.display = 'none';
+          backToTopBtn.style.display = "none";
         }
       });
 
       // Atualiza o ano no rodapé
-      document.getElementById('current-year').textContent = new Date().getFullYear();
+      document.getElementById("current-year").textContent = new Date().getFullYear();
     });
   </script>
 </body>
-
 </html>
-
