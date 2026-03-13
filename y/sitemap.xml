@@ -4,34 +4,31 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
-  <loc>https://robertobarbearia.com.br/</loc>
-  <lastmod>2025-09-13T19:17:46+00:00</lastmod>
+  <loc>https://robertobarbearia2024.web.app/</loc>
+  <lastmod>2026-03-13</lastmod>
   <priority>1.00</priority>
 </url>
+
 <url>
-  <loc>https://robertobarbearia.com.br/index.html</loc>
-  <lastmod>2025-09-13T19:17:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://robertobarbearia.com.br/services.html</loc>
-  <lastmod>2025-09-13T19:17:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://robertobarbearia.com.br/info.html</loc>
-  <lastmod>2025-09-13T19:17:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://robertobarbearia.com.br/contato.html</loc>
-  <lastmod>2025-09-13T19:17:46+00:00</lastmod>
+  <loc>https://robertobarbearia2024.web.app/index.html</loc>
   <priority>0.80</priority>
 </url>
 
+<url>
+  <loc>https://robertobarbearia2024.web.app/services.html</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://robertobarbearia2024.web.app/info.html</loc>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://robertobarbearia2024.web.app/contato.html</loc>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
